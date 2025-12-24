@@ -3,13 +3,6 @@
 ## 📌 Project Overview
 This project addresses critical algorithmic bias in computer vision systems by implementing a **Debiasing Variational Autoencoder (DB-VAE)**. Standard facial detection models often struggle to recognize faces from underrepresented demographics due to dataset imbalance. This project builds a semi-supervised generative model that automatically identifies and upsamples rare features (e.g., skin tone, gender) during training to create a fairer, more robust classifier.
 
-## 🚀 Key Results
-By leveraging adaptive resampling based on latent space distributions, the model achieved significant accuracy improvements for marginalized groups without manual data annotation.
-
-* **Dark Male Accuracy:** Improved from **~40%** (Standard CNN) to **~80%** (DB-VAE).
-* **Dark Female Accuracy:** Improved from **~52%** to **~58%**.
-* **Overall Fairness:** Drastically reduced the performance gap between light-skinned and dark-skinned demographics while maintaining high overall accuracy.
-
 ## 🧠 The Problem: Algorithmic Bias
 Deep learning models trained on imbalanced datasets (like CelebA, which is predominantly light-skinned) learn to correlate "face" features with the majority demographic. This leads to:
 * High accuracy for Light-Skinned Females/Males.
